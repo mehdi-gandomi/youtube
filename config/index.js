@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: 'https://mehdi-gandomi.github.io/youtube/',
     proxyTable: {},
 
     // Various Dev Server settings
