@@ -6,7 +6,7 @@
   "author": "mehdi <coderguy1999@gmail.com>",
   "scripts": {
     "build": "node build/build.js",
-    "deploy": "npm run build; push-dir --dir=dist --branch=gh-pages --cleanup",
+    "deploy": "npm run build ; push-dir --dir=dist --branch=gh-pages --cleanup",
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "sass:watch": "sass --watch static/scss/main.scss:static/css/main.min.css --style compressed"
