@@ -4,7 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import './registerServiceWorker'
+import VModal from 'vue-js-modal'
+import axios from 'axios'
 
+Vue.prototype.$http = axios;
+Vue.use(VModal)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

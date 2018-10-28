@@ -1,0 +1,4 @@
+
+@function responsive-font($min-width,$max-width,$min-font,$max-font){
+    @return calc(#{$min-font}px + (#{$max-font} - #{$min-font}) * ((100vw - #{$min-width}px) / (#{$max-width} - #{$min-width})));
+}

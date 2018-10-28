@@ -1,0 +1,114 @@
+@import "../components/picnic/picnic.scss";
+@import "../components/icomoon.scss";
+@import "../mixins/font-size.scss";
+@import "../components/modal.scss";
+@import "../components/loading.scss";
+body,html{
+    background: #c0392b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8e44ad, #c0392b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: IRANSans,Tahoma;    
+    direction: rtl;
+ 
+    overflow-x: hidden;
+    z-index: 2;
+    color: #fff;
+}
+p{
+    font-family: IRANSans,Tahoma;    
+}
+nav .brand{
+    order: 1;
+    justify-self: center;
+    flex-grow: 1;
+}
+.bg-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../images/youtube2.jpg') center center no-repeat;
+    background-size: cover;
+    
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+      opacity: .9; 
+    }
+  }
+header{
+    height: 3em;
+}
+main.wrapper{
+  min-height: calc(100vh - 175px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.video-input{
+  width: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #url{
+        text-align: center;
+    }
+    .url-input{
+        display: flex;
+        align-items: center;
+        input{
+          color: #000;
+        }
+    }
+    fieldset{
+        width: 40%;
+    }
+}
+.description h3{
+  font-size: responsive-font(577,1300,16,22);
+}
+
+//media queries
+
+@include media-sm{
+  .video-input{
+    fieldset{
+      width: 85% !important;
+    }
+  }
+  nav{
+    display: flex;
+    .brand{      
+      margin: 4px auto;
+    }
+  }
+}
+@include media-xs{
+  .video-input{
+    fieldset{
+      width: 85% !important;
+    }
+  }
+  nav{
+    display: flex;
+    .brand{      
+      margin: 4px auto;
+    }
+  }
+}
+@include media-md{
+  .video-input{
+    fieldset{
+      width: 65% !important;
+    }
+  }
+}
+
+@import "static/footer.scss";

@@ -2,7 +2,7 @@
       <header>
             <nav class="white">
                 <a href="#" class="brand">
-                    <img class="logo" src="@/assets/images/logo.png" />
+                    <img class="logo" src="@/assets/logo.png" />
                     <span>یوتیوب دانلودر</span>
                 </a>
 
